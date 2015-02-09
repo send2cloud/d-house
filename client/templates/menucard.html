@@ -1,3 +1,38 @@
+<link rel="stylesheet" type="text/css" href="../../build/assets/css/app.css">
+<style type="text/css">
+.specialflag {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  line-height: 24px;
+  padding: 0 30px 0 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: white;
+  /*background-color: #ffd34e;*/
+  background-color: #B80104;
+  z-index: 9;
+}
+.specialflag:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid #B80104;
+  border-left-color: transparent;
+  border-width: 12px 8px;
+  top: 0;
+  left: -10px;
+}
+.soldout {
+  padding:15px;
+  background-color:#D7D7D7;
+  text-decoration:line-through;
+  background: repeating-linear-gradient(-55deg,#f6f6f6,#f6f6f6 10px, #f1f1f1 10px,#f1f1f1 20px);
+  }
+</style>
 ---
 name: menucard
 url: /menucard.html
@@ -12,25 +47,25 @@ animationIn: fadeIn
 
 
         
-<img src="http://placehold.it/1000x200">
+<img src="http://lorempixel.com/1005/200/food">
   <div class="grid-frame" >
 
-<div class="grid-content">
+<div class="grid-content" >
 <section class="block-list" >
 <header>Dosai</header>
 <ul>
  <!-- menu item start-->
-<li >
+<li>
 <div class="grid-block" style="padding:15px" >
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
 <b> Special Dosa</b><br>
 <sub>Dosa is a crispy fried batter served with 3 condiments</sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
+<div class="grid-content text-center" ><div zf-action-sheet="">
+<div zf-as-button="" class="button">$4.50</div>
 <div zf-as-content="" position="bottom">
 <p>Add to Cart</p>
 <ul>
@@ -44,14 +79,14 @@ animationIn: fadeIn
 <li >
 <div class="grid-block" style="padding:15px" >
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
 <b> Special Dosa</b><br>
-<sub>Dosa is a crispy fried batter served with 3 condiments</sub>
+<sub>Dosa is a crispy fried batter served with 3 condiments. Dosa is a crispy fried </sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
+<div class="grid-content text-center" ><div zf-action-sheet="">
+<div zf-as-button="" class="button">$4.50</div>
 <div zf-as-content="" position="bottom">
 <p>Add to Cart</p>
 <ul>
@@ -62,22 +97,18 @@ animationIn: fadeIn
 <!--menu item close-->
  <!-- menu item start-->
 <li >
-<div class="grid-block" style="padding:15px" >
+<div class="grid-block soldout">
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
 <b> Special Dosa</b><br>
-<sub>Dosa is a crispy fried batter served with 3 condiments</sub>
+<sub>Dosa is a crispy fried batter served with 3 condiments. Dosa is a crispy fried batter served with 3 condiments</sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
-<div zf-as-content="" position="bottom">
-<p>Add to Cart</p>
-<ul>
-<li><a href="#">Yes</a></li>
-<li><a href="#">No</a></li>
-</ul></div></div></div></div>
+<div class="grid-content text-center" ><div>
+<div zf-as-button="" class="button alert">$11.50</div>
+  <div class="specialflag">SOLD OUT</div>
+</div></div></div>
 </li>
 <!--menu item close-->
  <!-- menu item start-->
@@ -85,14 +116,14 @@ animationIn: fadeIn
  <li >
 <div class="grid-block" style="padding:15px" >
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
 <b> Special Dosa</b><br>
-<sub>Dosa is a crispy fried batter served with 3 condiments</sub>
+<sub>Dosa is a crispy fried batter served with 3 condiments. batter served with 3 condiments</sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
+<div class="grid-content text-center" ><div zf-action-sheet="">
+<div zf-as-button="" class="button">$4.50</div>
 <div zf-as-content="" position="bottom">
 <p>Add to Cart</p>
 <ul>
@@ -101,37 +132,41 @@ animationIn: fadeIn
 </ul></div></div></div></div>
 </li>
 <!--menu item close--> <!-- menu item start-->
-<li >
+<li  style="border:dashed; background-color: #FFF7BE" >
 <div class="grid-block" style="padding:15px" >
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
-<b> Special Dosa</b><br>
-<sub>Dosa is a crispy fried batter served with 3 condiments</sub>
+<b> Diwali Special Dosa</b><br>
+<sub>Dosa is a crispy fried </sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
+<div class="grid-content text-center" ><div zf-action-sheet="">
+<div zf-as-button="" class=" button info">$4.50</div>
+
 <div zf-as-content="" position="bottom">
 <p>Add to Cart</p>
 <ul>
 <li><a href="#">Yes</a></li>
 <li><a href="#">No</a></li>
-</ul></div></div></div></div>
+
+</ul></div>
+
+</div></div>  <div class="specialflag">Todays Special  !</div></div>
 </li>
 <!--menu item close-->
  <!-- menu item start-->
 <li >
 <div class="grid-block" style="padding:15px" >
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
 <b> Special Dosa</b><br>
 <sub>Dosa is a crispy fried batter served with 3 condiments</sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
+<div class="grid-content text-center" ><div zf-action-sheet="">
+<div zf-as-button="" class="button">$4.50</div>
 <div zf-as-content="" position="bottom">
 <p>Add to Cart</p>
 <ul>
@@ -145,14 +180,14 @@ animationIn: fadeIn
 <li >
 <div class="grid-block" style="padding:15px" >
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
 <b> Special Dosa</b><br>
 <sub>Dosa is a crispy fried batter served with 3 condiments</sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
+<div class="grid-content text-center" ><div zf-action-sheet="">
+<div zf-as-button="" class="button">$14.50</div>
 <div zf-as-content="" position="bottom">
 <p>Add to Cart</p>
 <ul>
@@ -165,14 +200,14 @@ animationIn: fadeIn
 <li >
 <div class="grid-block" style="padding:15px" >
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
 <b> Special Dosa</b><br>
 <sub>Dosa is a crispy fried batter served with 3 condiments</sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
+<div class="grid-content text-center" ><div zf-action-sheet="">
+<div zf-as-button="" class="button">$6.50</div>
 <div zf-as-content="" position="bottom">
 <p>Add to Cart</p>
 <ul>
@@ -185,14 +220,14 @@ animationIn: fadeIn
 <li >
 <div class="grid-block" style="padding:15px" >
 <div class="grid-content shrink" >
-<img src="http://placehold.it/50x50">
+<img src="http://lorempixel.com/75/75/food">
 </div>
 <div class="grid-content">
 <b> Special Dosa</b><br>
 <sub>Dosa is a crispy fried batter served with 3 condiments</sub>
 </div>
-<div class="grid-content shrink" ><div zf-action-sheet="">
-<div zf-as-button="" title="$3.99"></div>
+<div class="grid-content text-center" ><div zf-action-sheet="">
+<div zf-as-button="" class="button">$1.50</div>
 <div zf-as-content="" position="bottom">
 <p>Add to Cart</p>
 <ul>
