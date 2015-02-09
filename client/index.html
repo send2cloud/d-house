@@ -5,30 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Dosa House</title>
     <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
-
     <script src="/assets/js/foundation.js"></script>
     <script src="/assets/js/routes.js"></script>
     <script src="/assets/js/app.js"></script>
     <!-- GOOGLE FONT -->
-
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
   </head>
   <body>
 <!--top-->
 <div class="grid-frame vertical" >
   <div class="dark title-bar">
-    <div class="center title"> Dosa House </div>
+    <div class="center title"> DH </div>
     <span class="right"> <span class="iconic-color-success">
     <a ui-sref="cart">Cart</a></span> </span> </div>
+    
   <!--middle-->
 
+      <div style="overflow:hidden"  class="grid-content">
 
-
-      <div class="grid-content">
-        <div class="grid-container">
           <div ng-class="['ui-animation']" ui-view=""></div>
-        </div>
+
       </div>
 
   <!--middle end/footer start-->
