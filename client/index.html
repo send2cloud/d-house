@@ -102,6 +102,15 @@ background:#000
 
   </head>
   <body>
+  <!--offcanvas holder-->
+  <zf-offcanvas id="menu" position="right" class="detached">
+ <div class="grid-frame" style="background-color:grey">
+ Shopping Cart
+</div>
+<a zf-close="" class="close-button">×</a>
+</zf-offcanvas>
+
+  <!-- end offcanvas-->
 <!--top-->
 <div class="grid-frame vertical" >
   <div class="dark title-bar">
@@ -109,7 +118,8 @@ background:#000
     </span> 
     <div class="center title"> Dosa House </div>
     <span class="right"> 
-    <a ui-sref="cart">Cart</a> </span> </div>
+<a zf-open="menu">Cart</a>
+    </span> </div>
     
   <!--middle-->
 
